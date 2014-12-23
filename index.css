@@ -1,0 +1,105 @@
+
+html{
+    min-height:100%;
+    background:linear-gradient(#EDFDFD, #AFD3FC);
+}
+
+div a {
+    text-decoration:none;
+    color:darkblue;
+}
+
+div a:hover {
+    text-decoration:underline;
+}
+
+fieldset {
+	border-style:none;
+    }
+
+div {
+    text-align:center;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:5px;
+}
+
+div textarea {
+    resize:none;
+}
+
+
+.pagination .left {
+	min-width:150px;
+	width:30%;
+    float: left;
+}
+
+.pagination .right {
+	min-width:150px;
+	width:30%;
+    float: right;
+}
+
+
+table {
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+ 
+}
+
+td {
+    vertical-align:middle;
+    height:140px;
+    background-color:rgba(255,255,255,.7);
+    min-width:140px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+td:first-child {
+    width:140px;
+  line-height:140px;
+  border-top-left-radius:4em;
+}
+	
+td:first-child img {
+    max-height:120px;
+    max-width:120px;
+    vertical-align:middle;
+	border-top-left-radius:2em;
+	}
+
+
+td:last-child {
+    min-width:250px;
+    width:100%;
+	border-bottom-right-radius:4em;
+	}
+
+
+#profil img {
+    background-color:white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    max-width:400px;
+    max-height:400px;
+}
+
+#inscription {
+    background-color:rgba(255,255,255,.7);
+    width:480px;
+    text-align:right;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+#modification {
+    background-color:rgba(255,255,255,.7);
+    width:480px;
+    text-align:right;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+#inscription input, #modification input {
+    margin-top:20px;
+}
