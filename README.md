@@ -35,7 +35,7 @@ En mode connecté, la liste des messages d'un auteur est précédée d'un bouton
 
 2.4 Création de messages
 
-La longueur maximale des messages envoyés est de 140 caractères. Un message est constitué par du texte simple, à une exception près : il peut contenir au maximum une URL que l’auteur doit faire figurer au sein d'accolades, comme par exemple {www.lifl.fr}. Lors de l’affichage du message, cette URL sera transformée en un véritable lien cliquable, et les accolades ne sont pas affichées. Si le message comporte plusieurs zones entre accolades, seule la première est traitée comme une URL, les autres (accolades incluses) sont considérés comme du texte normal. Une zone commençant par une accolade ouvrante et qui ne comporterait pas d'accolade fermante est également à traiter comme une zone de texte normal. Une fois publié, un message ne peut être effacé ni modifié.
+La longueur maximale des messages envoyés est de 140 caractères. Un message est constitué par du texte simple, à une exception près : il peut contenir au maximum une URL que l’auteur doit faire figurer au sein d'accolades, comme par exemple {www.github.com}. Lors de l’affichage du message, cette URL sera transformée en un véritable lien cliquable, et les accolades ne sont pas affichées. Si le message comporte plusieurs zones entre accolades, seule la première est traitée comme une URL, les autres (accolades incluses) sont considérés comme du texte normal. Une zone commençant par une accolade ouvrante et qui ne comporterait pas d'accolade fermante est également à traiter comme une zone de texte normal. Une fois publié, un message ne peut être effacé ni modifié.
 
 2.5 Recherche de personnes
 
