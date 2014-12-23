@@ -2,8 +2,6 @@
 
 Le Rézozio est un site qui permet aux internautes de publier de courts messages. Il leur permet de consulter les messages publiés par les autres et de « s’abonner » pour suivre plus facilement les publications d’internautes de leur choix.
 
-----------------------------------------------------
-
 2. Description fonctionnelle
 
 N'importe qui peut consulter le site Rézozio. Par contre pour y écrire un message, il faut se connecter et donc disposer d'un compte (protégé par mot de passe). Chaque utilisateur enregistré possède un identifiant, un nom et un avatar.
