@@ -1,4 +1,4 @@
-# Thème du projet :bird:
+# Thème du projet :speech_balloon:
 
 Le Rézozio est un site qui permet aux internautes de publier de courts messages. Il leur permet de consulter les messages publiés par les autres et de « s’abonner » pour suivre plus facilement les publications d’internautes de leur choix.
 
@@ -10,7 +10,7 @@ N'importe qui peut consulter le site Rézozio. Par contre pour y écrire un mess
 
 La page d'accueil du site présente la liste des messages publiés par tous les utilisateurs, selon le principe décrit dans la rubrique [Affichage d'une liste de messages](#affichage-dune-liste-de-messages).
 
-Un dispositif permet de se connecter à son compte, un autre pour créer un compte.
+Un dispositif gère la connexion à son compte, un autre permet de s'inscrire sur Rézozio.
 
 ## Consultation en mode connecté
 
