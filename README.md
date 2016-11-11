@@ -23,7 +23,7 @@ Il faudra prévoir des dispositifs permettant de :
 - gérer ses infos personnelles (nom, avatar)
 - se déconnecter
 
-### Affichage d'une liste de messages
+## Affichage d'une liste de messages
 
 Les messages sont toujours publiés par date de publication (de la plus récente à la plus ancienne) et par tranche de 10 messages maximum ; il est proposé une commande (lien, bouton...) permettant d’en afficher 10 de plus.
 
