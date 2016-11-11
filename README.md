@@ -14,7 +14,7 @@ Il faudra prévoir un dispositif permettant de se connecter, et un autre pour cr
 
 ## Consultation en mode connecté
 
-La page d'accueil du site présente la liste des messages publiés par l'usager connecté et par les auteurs auquel il est abonné , selon le principe décrit dans la rubrique [Affichage d'une liste de messages](#affichage-d'une-liste-de-messages).
+La page d'accueil du site présente la liste des messages publiés par l'usager connecté et par les auteurs auquel il est abonné , selon le principe décrit dans la rubrique [Affichage d'une liste de messages](#affichage-dune-liste-de-messages).
 
 Il faudra prévoir des dispositifs permettant de :
 - créer et envoyer un message
