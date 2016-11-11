@@ -1,4 +1,4 @@
-# Thème du projet
+# Thème du projet :bird:
 
 Le Rézozio est un site qui permet aux internautes de publier de courts messages. Il leur permet de consulter les messages publiés par les autres et de « s’abonner » pour suivre plus facilement les publications d’internautes de leur choix.
 
@@ -8,15 +8,15 @@ N'importe qui peut consulter le site Rézozio. Par contre pour y écrire un mess
 
 ## Consultation en mode non connecté
 
-La page d'accueil du site présente la liste des messages publiés par tous les utilisateurs, selon le principe décrit dans la rubrique «Affichage d'une liste de messages».
+La page d'accueil du site présente la liste des messages publiés par tous les utilisateurs, selon le principe décrit dans la rubrique [Affichage d'une liste de messages](#affichage-dune-liste-de-messages).
 
-Il faudra prévoir un dispositif permettant de se connecter, et un autre pour créer un compte.
+Un dispositif permet de se connecter à son compte, un autre pour créer un compte.
 
 ## Consultation en mode connecté
 
 La page d'accueil du site présente la liste des messages publiés par l'usager connecté et par les auteurs auquel il est abonné , selon le principe décrit dans la rubrique [Affichage d'une liste de messages](#affichage-dune-liste-de-messages).
 
-Il faudra prévoir des dispositifs permettant de :
+Un utilisateur peut :
 - créer et envoyer un message
 - consulter et gérer la liste de ses abonnements
 - rechercher un autre usager à partir de son nom ou de son identifiant
@@ -35,7 +35,7 @@ En mode connecté, la liste des messages d'un auteur est précédée d'un bouton
 
 ## Création de messages
 
-La longueur maximale des messages envoyés est de 140 caractères. Un message est constitué par du texte simple, à une exception près : il peut contenir au maximum une URL que l’auteur doit faire figurer au sein d'accolades, comme par exemple {www.github.com}. Lors de l’affichage du message, cette URL sera transformée en un véritable lien cliquable, et les accolades ne sont pas affichées. Si le message comporte plusieurs zones entre accolades, seule la première est traitée comme une URL, les autres (accolades incluses) sont considérés comme du texte normal. Une zone commençant par une accolade ouvrante et qui ne comporterait pas d'accolade fermante est également à traiter comme une zone de texte normal. Une fois publié, un message ne peut être effacé ni modifié.
+La longueur maximale des messages envoyés est de 140 caractères. Un message est constitué par du texte simple, à une exception près : il peut contenir au maximum une URL que l’auteur doit faire figurer au sein d'accolades, comme par exemple `{www.github.com}`. Lors de l’affichage du message, cette URL sera transformée en un véritable lien cliquable, et les accolades ne sont pas affichées. Si le message comporte plusieurs zones entre accolades, seule la première est traitée comme une URL, les autres (accolades incluses) sont considérés comme du texte normal. Une zone commençant par une accolade ouvrante et qui ne comporterait pas d'accolade fermante est également à traiter comme une zone de texte normal. Une fois publié, un message ne peut être effacé ni modifié.
 
 ## Recherche de personnes
 
