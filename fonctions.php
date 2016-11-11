@@ -16,7 +16,7 @@
 	}		
 	
 	function connexion ($bdd, $login, $password) {
-	  $password = sha1($password."motenpluspourcompliquerlecryptage");
+		$password = sha1($password."motenpluspourcompliquerlecryptage");
 		$res = $bdd->prepare(
 			"select ident, name from users
 				where ident=:ident and password=:password"
@@ -26,7 +26,7 @@
 		if($res) {
 			$data = $res->fetch();
 			if($data['ident'] != "" && $data['name'] != "")
-	  		$utilisateur = new Utilisateur($data['ident'], $data['name']);
+			$utilisateur = new Utilisateur($data['ident'], $data['name']);
 		}
 		return $utilisateur;
 	}
@@ -51,7 +51,7 @@
 				$type = "image/png";
 			}
 			$password = sha1($password."motenpluspourcompliquerlecryptage");
-  	   		$insertion =  $bdd->prepare(
+			$insertion =  $bdd->prepare(
 				"insert into users
 					values ('$ident','$password','$nom', :picture, :mimetype)"
 			);
@@ -102,27 +102,27 @@
 		
 		
 	function messages($bdd, $abonnements, $offset = 0) {
-	  $posts = array();
-	  $abo_string = "";
-	  foreach($abonnements as $cle => $valeur) {
-		  $abo_string = $abo_string."'".$valeur->ident()."',"; 
-	  }
-	  $abo_string[strlen($abo_string) - 1] = ")";
-	  $res = $bdd->query(
-	    "select * from messages 
+		$posts = array();
+		$abo_string = "";
+		foreach($abonnements as $cle => $valeur) {
+			$abo_string = $abo_string."'".$valeur->ident()."',"; 
+		}
+		$abo_string[strlen($abo_string) - 1] = ")";
+		$res = $bdd->query(
+		"select * from messages 
 		    where author in ($abo_string
 		    order by date desc 
 		    limit 11 offset $offset"
 		);
-	  if($res) {
-	    while($data = $res->fetch()) {
-		    $posts[] = array( 	'date' => $data['date'], 
+		if($res) {
+			while($data = $res->fetch()) {
+				$posts[] = array( 	'date' => $data['date'], 
 			                    'author' => getUtilisateur($bdd, $data['author']), 
 			                   'content' => $data['content']
-			  );
-	    }
-	  }
-	  return $posts;
+				);
+			}
+	  	}
+		return $posts;
 	}
 	
 	function utilisateurs($bdd, $recherche = "", $offset = 0) {
@@ -138,9 +138,9 @@
 		    $extra"
 		);
 		if($res) {
-  		while ($data = $res->fetch()){
-	  		$utilisateurs[] = new Utilisateur($data['ident'], $data['name']); 
-		  }
+			while ($data = $res->fetch()){
+				$utilisateurs[] = new Utilisateur($data['ident'], $data['name']); 
+			}
 		}
 		return $utilisateurs;
 	}
@@ -213,13 +213,13 @@
 	}
 	
 	function modificationName($bdd, $name, $user) {
-	  if ($name != "") {
+		if ($name != "") {
 			$res = $bdd->prepare(
 			  "update users set name=:name
 			    where ident=:user
 			");
 			$res->execute(array(':name' => $name, ':user' => $user));
-			}
+		}
 	}
 	  
 	function modificationPicture($bdd, $picture, $user) {
@@ -238,13 +238,13 @@
 	
 	function modificationPassword($bdd, $password, $oldpass, $user) {
 		if ($password != "" && $oldpass != "") {
-	    $password = sha1($password."motenpluspourcompliquerlecryptage");
-	    $oldpass = sha1($oldpass."motenpluspourcompliquerlecryptage");
+			$password = sha1($password."motenpluspourcompliquerlecryptage");
+			$oldpass = sha1($oldpass."motenpluspourcompliquerlecryptage");
 			$res = $bdd->prepare(
 			  "update users set password=:password
 			    where ident=:user and password=:oldpass
 			");
 			$res->execute(array(':password' => $password, ':user' => $user, ':oldpass' => $oldpass));
-			}
+		}
 	}
 ?>
