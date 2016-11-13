@@ -53,7 +53,7 @@ Le projet devra utiliser une base de données Postgresql
 
 ### Base de données
 
-Une structure de base vous est fournie. [Voici les commandes PostgreSQL permettant de créer la base](../blob/master/create2014.sql). Elle se compose de 3 tables :
+Une structure de base vous est fournie. [Voici les commandes PostgreSQL permettant de créer la base](../master/create2014.sql). Elle se compose de 3 tables :
 - La table `users` répertorie les utilisateurs, avec leur identifiant, mot de passe, nom éventuel et photo éventuelle.
 - La table `messages` contient l'ensemble des messages.
 - La table `follow` concerne les abonnements : author désigne l'abonné et follower quelqu'un qui le suit.
